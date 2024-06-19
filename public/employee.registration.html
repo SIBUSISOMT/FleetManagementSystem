@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Management System</title>
+  <link rel="stylesheet" href="/public/css/employee.registration.css">
+</head>
+<body>
+  <h1>Fleet Management System</h1>
+
+  <h2>Add Employee</h2>
+  <form id="addEmployeeForm">
+    <input type="text" name="first_name" placeholder="First Name" required>
+    <input type="text" name="last_name" placeholder="Last Name" required>
+    <input type="text" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select id="register-role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="manager">Manager</option>
+        <option value="user">User</option>
+      </select>
+    <button type="submit">Add Employee</button>
+  </form>
+
+  <h2>Employee List</h2>
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Position</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="employeeBody"></tbody>
+  </table>
+
+  <script src="/public/js/employee.registration.js"></script>
+</body>
+</html>

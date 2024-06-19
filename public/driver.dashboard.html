@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/driver.css">
+  <title>Driver Dashboard</title>
+</head>
+<body>
+  <div id="driver-dashboard-container">
+    <header>
+      <h1>Driver Dashboard</h1>
+    </header>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('view-trips')">View Trips</button>
+    </nav>
+    <main>
+      <section id="home" class="section">
+        <h2>Welcome, Driver</h2>
+        <p>Here you can view your trips and report issues.</p>
+      </section>
+      <section id="view-trips" class="section hidden">
+        <h2>View Trips</h2>
+        <ul id="trip-list">
+          <!-- Trip details will be dynamically loaded here -->
+        </ul>
+      </section>
+      <section id="report-issue" class="section hidden">
+        <h2>Report Issue</h2>
+        <form id="report-issue-form">
+          <input type="hidden" id="trip-id" name="tripId">
+          
+          <label for="issue-description">Description:</label>
+          <textarea id="issue-description" name="description" required></textarea>
+          
+          <label for="issue-date">Date:</label>
+          <input type="date" id="issue-date" name="date" required>
+          
+          <button type="submit">Report Issue</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="/public/js/driver.js"></script>
+</body>
+</html>
