@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vehicles Management</title>
+    <link rel="stylesheet" href="/public/css/driver.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="management-section">
+      <nav>
+        <div class="sidebar-button">
+          <span class="dashboard">Vehicles Management</span>
+        </div>
+        
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Admin</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+      <a href="/public/views/admin.dashboard.html">Back</a>
+
+      <div class="management-content">
+        <div class="form-container">
+          <div class="form-box">
+            <h2>Add New Vehicle</h2>
+            <form action="#">
+              <label for="vehicleName">Vehicle Name:</label>
+              <input type="text" id="vehicleName" name="vehicleName" required>
+
+              <label for="vehicleType">Type:</label>
+              <input type="text" id="vehicleType" name="vehicleType" required>
+
+              <label for="vehicleReg">Registration Number:</label>
+              <input type="text" id="vehicleReg" name="vehicleReg" required>
+
+              <label for="vehicleStatus">Status:</label>
+              <select id="vehicleStatus" name="vehicleStatus">
+                <option value="available">Available</option>
+                <option value="in-use">In Use</option>
+                <option value="maintenance">Under Maintenance</option>
+              </select>
+
+              <input type="submit" value="Add Vehicle">
+            </form>
+          </div>
+          <div class="list-box">
+            <h2>Vehicle List</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Registration Number</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Truck 1</td>
+                  <td>Truck</td>
+                  <td>XY1234</td>
+                  <td>Available</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Van 2</td>
+                  <td>Van</td>
+                  <td>AB5678</td>
+                  <td>In Use</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maintenance Management</title>
+    <link rel="stylesheet" href="/public/css/driver.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="management-section">
+      <nav>
+        <div class="sidebar-button">
+          <span class="dashboard">Maintenance Management</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Admin</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+      <a href="/public/views/admin.dashboard.html" class="back>Back</a>
+      <div class="management-content">
+        <div class="form-container">
+          <div class="form-box">
+            <h2>Schedule Maintenance</h2>
+            <form action="#">
+              <label for="vehicleId">Vehicle ID:</label>
+              <input type="text" id="vehicleId" name="vehicleId" required>
+
+              <label for="maintenanceType">Maintenance Type:</label>
+              <select id="maintenanceType" name="maintenanceType">
+                <option value="oil-change">Oil Change</option>
+                <option value="tire-replacement">Tire Replacement</option>
+                <option value="brake-inspection">Brake Inspection</option>
+                <option value="general-inspection">General Inspection</option>
+              </select>
+
+              <label for="scheduledDate">Scheduled Date:</label>
+              <input type="date" id="scheduledDate" name="scheduledDate" required>
+
+              <label for="description">Description:</label>
+              <textarea id="description" name="description" rows="4"></textarea>
+
+              <input type="submit" value="Schedule Maintenance">
+            </form>
+          </div>
+          <div class="list-box">
+            <h2>Maintenance Records</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Vehicle ID</th>
+                  <th>Maintenance Type</th>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>XY1234</td>
+                  <td>Oil Change</td>
+                  <td>2024-06-15</td>
+                  <td>Regular oil change</td>
+                  <td>Completed</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>AB5678</td>
+                  <td>Tire Replacement</td>
+                  <td>2024-06-20</td>
+                  <td>Replaced all four tires</td>
+                  <td>Scheduled</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

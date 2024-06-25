@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drivers Management</title>
+    <link rel="stylesheet" href="/public/css/driver.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="management-section">
+      <nav>
+        <div class="sidebar-button">
+          <span class="dashboard">Drivers Management</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Admin</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+      <a href="/public/views/admin.dashboard.html" id="back">Back</a>
+     
+      <div class="management-content">
+        <div class="form-container">
+          <div class="form-box">
+            <h2>Add New Driver</h2>
+            <form action="#">
+              <label for="driverName">Driver Name:</label>
+              <input type="text" id="driverName" name="driverName" required>
+
+              <label for="driverLicense">License Number:</label>
+              <input type="text" id="driverLicense" name="driverLicense" required>
+
+              <label for="driverPhone">Phone Number:</label>
+              <input type="text" id="driverPhone" name="driverPhone" required>
+
+              <label for="driverStatus">Status:</label>
+              <select id="driverStatus" name="driverStatus">
+                <option value="available">Available</option>
+                <option value="on-trip">On Trip</option>
+                <option value="inactive">Inactive</option>
+              </select>
+
+              <input type="submit" value="Add Driver">
+            </form>
+          </div>
+          <div class="list-box">
+            <h2>Driver List</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>License Number</th>
+                  <th>Phone Number</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>A1234567</td>
+                  <td>123-456-7890</td>
+                  <td>Available</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jane Smith</td>
+                  <td>B2345678</td>
+                  <td>234-567-8901</td>
+                  <td>On Trip</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

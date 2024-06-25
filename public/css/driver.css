@@ -1,43 +1,129 @@
-/* Driver Dashboard Styles */
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
+}
 
-#driver-dashboard-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  nav button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  main {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .section {
-    margin-bottom: 20px;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+a {
+  text-decoration: none;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+nav .search-box input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+nav .search-box i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+nav .profile-details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Form Container Styles */
+.management-section {
+  padding: 20px;
+}
+
+.management-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#back{
+ 
+  margin-top: 100rem;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.form-box, .list-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 45%;
+}
+
+.form-box h2, .list-box h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

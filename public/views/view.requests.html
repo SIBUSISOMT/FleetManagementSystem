@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Service Requests</title>
+    <link rel="stylesheet" href="/public/css/driver.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="management-section">
+      <nav>
+        <div class="sidebar-button">
+          <span class="dashboard">All Service Requests</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Admin</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+      <a href="/public/views/admin.dashboard.html" class="back>Back</a>
+      <div class="management-content">
+        <table class="requests-table">
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Contact</th>
+              <th>Address</th>
+              <th>Goods Type</th>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Destination</th>
+              <th>Delivery Date</th>
+              <th>Mass (KG)</th>
+              <th>Status</th>
+              <th>Driver Name</th>
+              <th>Driver Contact</th>
+              <th>License Number</th>
+              <th>Vehicle</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example Row for a Request -->
+            <tr>
+              <td>John Doe</td>
+              <td>123-456-7890</td>
+              <td>123 Main St</td>
+              <td>Electronics</td>
+              <td>Laptops and accessories</td>
+              <td>10</td>
+              <td>456 Market St</td>
+              <td>2024-07-01</td>
+              <td>50.00</td>
+              <td>Pending</td>
+              <td>Jane Smith</td>
+              <td>987-654-3210</td>
+              <td>A123456789</td>
+              <td>Truck 1</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <!-- More rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
