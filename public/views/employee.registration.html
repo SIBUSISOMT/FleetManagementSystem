@@ -5,39 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fleet Management System</title>
   <link rel="stylesheet" href="/public/css/employee.registration.css">
-</head>
+</head><link rel="stylesheet" href="/public/css/employee.registration.css">
+<nav>
+  <div class="sidebar-button">
+    <span class="dashboard">Drivers Management</span>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Search..." />
+    <i class="bx bx-search"></i>
+  </div>
+  <div class="profile-details">
+    <img src="images/profile.jpg" alt="Profile Picture" />
+    <span class="admin_name">Admin</span>
+    <i class="bx bx-chevron-down"></i>
+  </div>
+</nav>
+
 <body>
-  <h1>Fleet Management System</h1>
+  
+  <div class="container">
+    <div id="emloyeeBack">
+    <a href="/public/views/admin.dashboard.html" ><button>Back</button></a>
+   </div>
+    <div class="form-box">
+      <h2>Add Employee</h2>
+      <form id="addEmployeeForm">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+        <label for="register-role">Role:</label>
+        <select id="register-role" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="admin">Admin</option>
+          <option value="manager">Manager</option>
+          <option value="user">User</option>
+        </select>
+        
+        <div class="buttons">
+          <button type="submit">Add Employee</button>
+          
+        </div>
+      </form>
+    </div>
 
-  <h2>Add Employee</h2>
-  <form id="addEmployeeForm">
-    <input type="text" name="first_name" placeholder="First Name" required>
-    <input type="text" name="last_name" placeholder="Last Name" required>
-    <input type="text" name="phone" placeholder="Phone" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <select id="register-role" required>
-        <option value="" disabled selected>Select Role</option>
-        <option value="admin">Admin</option>
-        <option value="manager">Manager</option>
-        <option value="user">User</option>
-      </select>
-    <button type="submit">Add Employee</button>
-  </form>
-
-  <h2>Employee List</h2>
-  <table id="employeeTable">
-    <thead>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>Position</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody id="employeeBody"></tbody>
-  </table>
+    <div class="table-box">
+      <h2>Employee List</h2>
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employeeBody"></tbody>
+      </table>
+    </div>
+  </div>
 
   <script src="/public/js/employee.registration.js"></script>
 </body>

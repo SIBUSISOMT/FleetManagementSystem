@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Management System - Reports</title>
+  <link rel="stylesheet" href="/public/css/reports.css">
+</head>
+<nav>
+    <div class="sidebar-button">
+      <span class="dashboard">View Reports</span>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <i class="bx bx-search"></i>
+    </div>
+    <div class="profile-details">
+      <img src="images/profile.jpg" alt="Profile Picture" />
+      <span class="admin_name">Admin</span>
+      <i class="bx bx-chevron-down"></i>
+    </div>
+  </nav>
+  
+<body>
+  <div class="container">
+
+    <a href="/public/views/admin.dashboard.html" ><button id="back">Back</button></a><h1> Reports</h1>
+
+    <div class="report-row">
+      <div class="report-section">
+        <h2>Vehicle Reports</h2>
+        <form id="vehicleReportForm">
+          <label for="vehicleId">Vehicle ID:</label>
+          <input type="text" id="vehicleId" name="vehicleId" required>
+          
+          <label for="vehicleReportType">Report Type:</label>
+          <select id="vehicleReportType" name="vehicleReportType">
+            <option value="usage">Usage Report</option>
+            <option value="fuel">Fuel Consumption Report</option>
+            <option value="maintenance">Maintenance Report</option>
+          </select>
+
+          <label for="vehicleReportDateRange">Date Range:</label>
+          <input type="date" id="vehicleReportStartDate" name="vehicleReportStartDate" required>
+          to
+          <input type="date" id="vehicleReportEndDate" name="vehicleReportEndDate" required>
+
+          <button type="submit">Generate Report</button>
+        </form>
+      </div>
+
+      <div class="report-section">
+        <h2>Driver Reports</h2>
+        <form id="driverReportForm">
+          <label for="driverId">Driver ID:</label>
+          <input type="text" id="driverId" name="driverId" required>
+
+          <label for="driverReportType">Report Type:</label>
+          <select id="driverReportType" name="driverReportType">
+            <option value="activity">Activity Report</option>
+            <option value="performance">Performance Report</option>
+            <option value="safety">Safety Report</option>
+          </select>
+
+          <label for="driverReportDateRange">Date Range:</label>
+          <input type="date" id="driverReportStartDate" name="driverReportStartDate" required>
+          to
+          <input type="date" id="driverReportEndDate" name="driverReportEndDate" required>
+
+          <button type="submit">Generate Report</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="report-section">
+        <h2>Maintenance Reports</h2>
+        <form id="maintenanceReportForm">
+          <label for="maintenanceReportType">Report Type:</label>
+          <select id="maintenanceReportType" name="maintenanceReportType">
+            <option value="scheduled">Scheduled Maintenance</option>
+            <option value="unscheduled">Unscheduled Maintenance</option>
+          </select>
+
+          <label for="maintenanceReportDateRange">Date Range:</label>
+          <input type="date" id="maintenanceReportStartDate" name="maintenanceReportStartDate" required>
+          to
+          <input type="date" id="maintenanceReportEndDate" name="maintenanceReportEndDate" required>
+
+          <button type="submit">Generate Report</button>
+        </form>
+      </div>
+
+      <div class="report-section">
+        <h2>Route Reports</h2>
+        <form id="routeReportForm">
+          <label for="routeId">Route ID:</label>
+          <input type="text" id="routeId" name="routeId" required>
+
+          <label for="routeReportType">Report Type:</label>
+          <select id="routeReportType" name="routeReportType">
+            <option value="efficiency">Efficiency Report</option>
+            <option value="delivery">Delivery Report</option>
+            <option value="delay">Delay Report</option>
+          </select>
+
+          <label for="routeReportDateRange">Date Range:</label>
+          <input type="date" id="routeReportStartDate" name="routeReportStartDate" required>
+          to
+          <input type="date" id="routeReportEndDate" name="routeReportEndDate" required>
+
+          <button type="submit">Generate Report</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
