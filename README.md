@@ -91,17 +91,17 @@ FleetManagementSystem/
 │   │   ├── employeeModel.js
 │   │   └── reportModel.js
 │   │
-│   ├── routes/
-│   │   ├── userRoutes.js
-│   │   ├── driverRoutes.js
-│   │   ├── vehicleRoutes.js
-│   │   ├── routeRoutes.js
-│   │   ├── itemRoutes.js
-│   │   ├── employeeRoutes.js
-│   │   └── reportRoutes.js
-│   │
-│   └── middleware/
-│       └── authMiddleware.js
+│   └── routes/
+│       ├── userRoutes.js
+│       ├── driverRoutes.js
+│       ├── vehicleRoutes.js
+│       ├── routeRoutes.js
+│       ├── itemRoutes.js
+│       ├── employeeRoutes.js
+│       └── reportRoutes.js
+│   
+│   
+│       
 │
 ├── public/
 │   ├── css/
