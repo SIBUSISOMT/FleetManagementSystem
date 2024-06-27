@@ -9,7 +9,6 @@ sidebarBtn.onclick = function() {
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
 
-
 function toDriver(){
   window.location.href = '/public/views/forgot.password.html';
 }
