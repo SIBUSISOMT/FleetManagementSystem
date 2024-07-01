@@ -30,7 +30,7 @@ function showLogin() {
       alert(data.message);
     }
   }
-  
+
   async function register() {
     const username = document.getElementById('register-username').value;
     const password = document.getElementById('register-password').value;

@@ -35,7 +35,7 @@ function loadTrips() {
 
 function reportIssue(event) {
   event.preventDefault();
-  
+
   const issueData = {
     tripId: document.getElementById('trip-id').value,
     description: document.getElementById('issue-description').value,
