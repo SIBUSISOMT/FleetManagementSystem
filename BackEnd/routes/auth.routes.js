@@ -15,6 +15,7 @@ router.get('/register', forwardAuthenticated, (req, res) => res.sendFile(path.jo
 router.get('/forgot-password', forwardAuthenticated, (req, res) => res.sendFile(path.join(__dirname, '../public/views/forgot.password.html')));
 
 // Register
+
 router.post('/register', authController.register);
 
 // Login
